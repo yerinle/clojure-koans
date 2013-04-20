@@ -17,7 +17,8 @@
           (recursive-reverse (subvec coll 0 (- (count coll) 1)))))))
 
 (defn factorial [n]
-  (loop [n n f 1]
+  (loop [n n 
+         f 1]
   (if (= 1 n)
     f
   (recur (dec n) (* f n)))))
